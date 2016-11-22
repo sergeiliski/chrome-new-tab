@@ -149,7 +149,7 @@ function initWeatherLocation() {
             chrome.storage.local.set({
                 'location': 'Vantaa'
             })
-            $('.weather input').val('Vantaa')
+            $('.weather input').val('Amsterdam')
         }
     })
     updateWeather()
