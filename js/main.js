@@ -1,6 +1,6 @@
 
 var openWeatherMapAppid = ''
-var subreddit = 'EarthPorn';
+var subreddit = 'EarthPorn'
 var imageExtensions = ['jpg', 'jpeg', 'png']
 var currentIcon = ''
 
@@ -41,6 +41,7 @@ function getBackground() {
 function setBackground() {
     chrome.storage.local.get('data', function(result) {
         if ('data' in result) {
+            console.log(result)
             setBackgroundSource(result.data.url, result.data.title)
             setBackgroundImage(result.data.imageUrl)
         } else getBackground()
@@ -147,7 +148,7 @@ function initWeatherLocation() {
             $('.weather input').val(result.location)
         } else {
             chrome.storage.local.set({
-                'location': 'Vantaa'
+                'location': 'Amsterdam'
             })
             $('.weather input').val('Amsterdam')
         }
