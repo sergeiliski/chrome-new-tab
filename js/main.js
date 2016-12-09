@@ -16,6 +16,7 @@ function getImageUrl(data) {
     var imgUrl = data.url
     if (imageExtensions.indexOf(imgUrl.toLowerCase().split('.').pop()) == -1) {
         if (imgUrl.indexOf('imgur') > 0) imgUrl += '.jpg'
+        else if (imgUrl.indexOf('reddituploads') > 0) imgUrl = imgUrl.replace(/&amp;/g, '&')
         else imgUrl =  '/img/background.jpg'
     }
     return imgUrl
