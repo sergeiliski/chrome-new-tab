@@ -42,7 +42,6 @@ function getBackground() {
 function setBackground() {
     chrome.storage.local.get('data', function(result) {
         if ('data' in result) {
-            console.log(result)
             setBackgroundSource(result.data.url, result.data.title)
             setBackgroundImage(result.data.imageUrl)
         } else getBackground()
