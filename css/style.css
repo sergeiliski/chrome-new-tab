@@ -191,37 +191,51 @@ a {
 }
 
 .icon-netflix:before {
-    content: "\e900";
-    font-size: 30px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-.icon-bbc:before {
-    content: "\e901";
-    font-size: 30px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-.icon-goodreads:before {
     content: "\e902";
     font-size: 30px;
     position: absolute;
     top: 15px;
     left: 15px;
 }
-.icon-uva:before {
+.icon-bbc:before {
+    content: "\e903";
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.icon-goodreads:before {
     content: "\e904";
     font-size: 30px;
     position: absolute;
     top: 15px;
     left: 15px;
 }
-.icon-nunl:before {
-    content: "\e903";
+.icon-uva:before {
+    content: "\e906";
     font-size: 30px;
     position: absolute;
     top: 15px;
     left: 15px;
+}
+.icon-nunl:before {
+    content: "\e905";
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.icon-city_university:before {
+  content: "\e900";
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.icon-guardian:before {
+  content: "\e901";
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
